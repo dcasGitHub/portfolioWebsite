@@ -4,7 +4,7 @@
 -->
 <html>
 	<head>
-		<title>Testing HTML5</title> <!-- Change this later. -->
+		<title>Diego - Portfolio</title> <!-- Change this later. -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,8 +18,8 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="#work" class="icon solid fa-gamepad"><span>Work</span></a>
+						<a href="#aboutme" class="icon solid fa-user"><span>About Me</span></a>
 						<a href="https://github.com/dcasGitHub/portfolioWebsite" class="icon brands fa-github"><span>Github Repo</span></a>
 					</nav> <!-- Change the icon to the GitHub icon. -->
 
@@ -32,98 +32,176 @@
 									<h1>Diego</h1>
 									<p>Game Developer</p>
 								</header>
+								<style>
+									.size {
+										object-fit: cover;
+									}
+								</style>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
+									<img src="images/me.png" class="size" alt="" />
 								</a>
 							</article>
+
+							<script>
+								var audio = document.getElementById("audio");
+								audio.volume = 0.1;
+								audio.loop = true;
+							  </script>
 
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
-									<h2>Experience</h2>
+									<h2>Games</h2>
 								</header>
 								<p>
-									Unity Engine (C#) - Autodesk Maya - Adobe Photoshop
+									Programmed in C# using the Unity Engine.
 								</p>
 								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+
+									<style>
+										.container {
+											position: relative;
+											width: 50%;
+										}
+
+										.container2 {
+											position: relative;
+											width: 100%;
+										}
+							
+										.image {
+											opacity: 1;
+											display: block;
+											width: 100%;
+											height: auto;
+											transition: .5s ease;
+											backface-visibility: hidden;
+										}
+							
+										.middle {
+											transition: .5s ease;
+											opacity: 0;
+											position: absolute;
+											top: 85%;
+											left: 50%;
+											transform: translate(-40%, -40%);
+											-ms-transform: translate(-40%, -40%);
+											text-align: center;
+										}
+										
+										.container:hover .image {
+											opacity: 0.8;
+											filter: blur(0px);
+										}
+										  
+										.container:hover .middle {
+											opacity: 1;
+										}
+
+										.container2:hover .image {
+											opacity: 0.8;
+											filter: blur(0px);
+										}
+										  
+										.container2:hover .middle {
+											opacity: 1;
+										}
+							
+							
+										.text {
+											background-color: #363636;
+											color: rgb(255, 255, 255);
+											font-size: 18px;
+											padding: 18px 16px;
+										}
+										
+									</style>
+									
+									<div class="row"> <!-- Replace these with WebM/MPEG4, they are smaller-->
+										<div class="container">
+												<div class="text"><center>Swords and Daggers</center></div>
+											<div class= "1">
+											<a class="image fit"><img src="images/game1.gif" alt=""></a>
+											<div class="middle"> <!-- CHANGE THESE TO THE REAL VIDEOS!!-->
+												<a href="https://www.youtube.com/watch?v=A-UcSOccnBk" target="_blank" class="text">Preview</a>
+											</div>
+											</div>
+											<center>2019</center>
+											"Hack & Slash" inspired design.<br>
+											- Set up the VR environment.<br>
+											- Developed AI/actions.<br>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+										<div class="container"> <!--Working Area-->
+												<div class="text"><center>Aster: Trinity of Nature</center></div>
+											<div class= "2">
+											<a class="image fit"><img src="images/game2.gif" alt=""></a>
+											<div class="middle">
+												<a href="https://www.youtube.com/watch?v=Y8agbR5S2tM" target="_blank" class="text">Preview</a>
+											</div>
+											</div>
+											<center>2022</center>
+											Runner-up Game Pitch.<br>
+											- Educational Level Design.<br>
+											- Prototype made in two days.<br>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+										<div class="container2"> <!-- Make this one playable via WebGL-->
+												<div class="text"><center>Thwomp Pong</center></div>
+											<div class= "3">
+											<a class="image fit"><img src="images/game3.gif" alt=""></a>
+											<div class="middle">
+												<a href="https://www.youtube.com/watch?v=QIi2LLztQjQ" target="_blank" class="text">Preview</a>
+											</div>
+											</div>
+											<center>2021</center>
+											Pong-Inspired Fan Game<br>
+											- Programmed the base "Pong" style gameplay.<br>
+											- Turned ball physics glitch into a new "crushing" mechanic.<br>
+											- Programmed difficulty settings based on speed.<br>
 										</div>
 									</div>
 								</section>
+								<footer>
+									<center>More Coming Soon!</center>
+								</footer>
 							</article>
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
+						<!-- About Me -->
+							<article id="aboutme" class="panel">
 								<header>
-									<h2>Contact Me</h2>
+									<h2>About Me</h2>
 								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
+								<div class="row"> <!-- Replace these with WebM/MPEG4, they are smaller-->
+									<div class="container">
+											My name is Diego, an individual with aspirations and the will to create. <br><br>
+											Discovering what I truly love to do lies in my creative visions. The best way I can
+											express myself is through game and software design. <br><br>
+											As a programmer, I look forward to the satisfying feel of problem solving. <br>
+											As a designer, I look forward to designing a memorable experience. <br><br>
+
+											<div class="text">If you were to generally ask me why you should hire me, I would say:<br>
+											"I will find a way to work efficiently, and put as much of my passion where it matters most."</div>
+										<div class= "1">
+										<div class="middle">
+										</div>
 										</div>
 									</div>
-								</form>
+									<div class="container">
+										<a class="image fit"><img src="images/me2.png" alt=""></a>
+										<div class="middle">
+										</div>
+										</div>
+									</div>
 							</article>
 
 					</div>
 
-				<!-- Footer -->
+				<!-- Footer
 					<div id="footer">
 						<ul class="copyright">
-							<!-- <li>&copy; Untitled.</li><li>Design: --> <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
-					</div>
+					</div>-->
 
 			</div>
 
